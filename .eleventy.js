@@ -4,5 +4,8 @@ module.exports = (config) => {
             input: 'src',
             output: 'dist',
         },
+        markdownTemplateEngine: 'njk',
+        dataTemplateEngine: 'njk',
+        htmlTemplateEngine: 'njk',
     };
 };
