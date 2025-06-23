@@ -6,6 +6,10 @@
         <title>{{ title }}</title>
     </head>
     <body>
-        {% block content%}{% endblock %}
+        {% include "partials/site-head.html" %}
+        <main tabbindex="-1" id="main-content">
+            {% block content %}
+            {% endblock %}
+        </main>
     </body>
 </html>
